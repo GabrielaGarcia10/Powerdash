@@ -9,8 +9,11 @@
 /* Seccion de estilos con camelCase */
 /* Header */
 .logoHeader {
-    inline-size: 10vh;
+    inline-size: 8vh;
+}
 
+.logoHeader.hover{
+    size: 12vh;
 }
 
 .fraseHeader {
@@ -54,7 +57,6 @@ ul li {
 
 a {
     text-decoration: none;
-
 }
 
 .light200 {
@@ -111,7 +113,7 @@ h1 {
     text-align: right;
     margin-top: 100px;
     margin-right: 200px;
-    
+
 }
 
 .textoInicio {
@@ -131,6 +133,7 @@ h1 {
     background-position-y: 50px;
     background-size: 100%;
     background-repeat: no-repeat;
+    
 }
 
 /* estilo de los formularios */
@@ -145,6 +148,9 @@ h1 {
     text-align: center;
     width: 1000px;
     height: 500px;
+}
+input:active {
+    height: 20px;
 }
 
 .cuboDatosPersonales {
@@ -401,6 +407,12 @@ h1 {
     background-color: rgb(252, 217, 0);
     background-size: 100%;
 }
+.aparecer{   
+    animation-name: aparecer;
+    animation-iteration-count: initial;
+    animation-timing-function: ease-in;
+    animation-duration: 5s;
+}
 
 .estiloPreguntasRespuestas {
     margin-left: 50px;
@@ -645,3 +657,21 @@ h1 {
 
 }
 /* ANIMACIONES Y TRANSFORMACIONES */
+
+@keyframes aparecer {
+    0%{
+        font-weight: 600px;
+    }
+    25% {
+        font-weight: 800px;
+    }
+    50%{
+        font-weight: 800px;
+    }
+    75%{
+        font-weight: 800px;
+    }
+    100%{
+        font-weight: 600px;
+    }
+}
